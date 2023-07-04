@@ -1,7 +1,8 @@
 name: hrk_batteries
 version: 0.1.0-dev.1
 
-description: A starting point for Dart libraries or applications.
+description: >-
+  A library to accumulate required dart helper and utility codes
 repository: https://github.com/hrishikesh-kadam/hrk_batteries.dart
 
 environment:
