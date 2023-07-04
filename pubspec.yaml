@@ -4,6 +4,9 @@ version: 0.1.0-dev.1
 description: >-
   A library to accumulate required dart helper and utility codes
 repository: https://github.com/hrishikesh-kadam/hrk_batteries.dart
+topics:
+  - batteries
+  - dart-batteries
 
 environment:
   sdk: ^3.0.0
