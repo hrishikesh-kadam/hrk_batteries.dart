@@ -1,3 +1,7 @@
+## 0.1.0-dev.4
+
+- Add JsonMap and FromJsonFunction typedef
+
 ## 0.1.0-dev.3
 
 - Add String.capitalize() extension
