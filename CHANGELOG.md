@@ -1,3 +1,7 @@
+## 0.1.0-pre.5
+
+- Export typedef.dart
+
 ## 0.1.0-dev.4
 
 - Add JsonMap and FromJsonFunction typedef

@@ -1,4 +1,4 @@
-import 'package:hrk_batteries/src/typedef.dart';
+import 'package:hrk_batteries/hrk_batteries.dart';
 import 'package:test/test.dart';
 
 void main() {
