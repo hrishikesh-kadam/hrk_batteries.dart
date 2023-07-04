@@ -10,12 +10,12 @@ dart test \
   test
 dart pub global run coverage:format_coverage \
   --in coverage/test/ \
-  --out coverage/non-default-lcov.info \
+  --out coverage/default-lcov.info \
   --report-on lib \
   --base-directory . \
   --lcov \
   --check-ignore
-lcov --list coverage/non-default-lcov.info
+lcov --list coverage/default-lcov.info
 
 DART_TEST=true dart test \
   --tags with-dart-test-env \
@@ -30,7 +30,7 @@ dart pub global run coverage:format_coverage \
   --check-ignore
 lcov --list coverage/with-dart-test-env-lcov.info
 
-lcov --add-tracefile coverage/non-default-lcov.info \
+lcov --add-tracefile coverage/default-lcov.info \
   --add-tracefile coverage/with-dart-test-env-lcov.info \
   --output-file coverage/lcov.info
 lcov --list coverage/lcov.info
