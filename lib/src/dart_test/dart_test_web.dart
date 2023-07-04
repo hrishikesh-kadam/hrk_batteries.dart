@@ -1,2 +1,2 @@
 /// Run command as `DART_TEST=true dart test`
-bool isDartTest() => bool.fromEnvironment('DART_TEST');
+bool isDartTest() => const bool.fromEnvironment('DART_TEST');

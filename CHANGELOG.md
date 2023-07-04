@@ -1,3 +1,7 @@
+## 0.1.0-pre.6
+
+- Fix isDartTest()
+
 ## 0.1.0-pre.5
 
 - Export typedef.dart
