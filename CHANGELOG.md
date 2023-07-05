@@ -1,3 +1,7 @@
+## 0.1.0-pre.7
+
+- Integrate hrk_analysis
+
 ## 0.1.0-pre.6
 
 - Fix isDartTest()
