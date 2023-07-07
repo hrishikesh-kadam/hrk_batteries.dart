@@ -1,3 +1,7 @@
+## 0.1.0
+
+- Promote v0.1.0-pre.7 to v0.1.0
+
 ## 0.1.0-pre.7
 
 - Integrate hrk_analysis
