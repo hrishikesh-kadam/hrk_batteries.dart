@@ -4,9 +4,11 @@ set -ex -o pipefail
 
 dart pub global activate coverage
 
+
+rm -rf coverage
 dart test \
   --exclude-tags non-default \
-  --coverage=coverage \
+  --coverage coverage \
   test
 dart pub global run coverage:format_coverage \
   --in coverage/test/ \
@@ -19,7 +21,7 @@ lcov --list coverage/default-lcov.info
 
 DART_TEST=true dart test \
   --tags with-dart-test-env \
-  --coverage=coverage \
+  --coverage coverage \
   test
 dart pub global run coverage:format_coverage \
   --in coverage/test/ \
