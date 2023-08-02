@@ -3,7 +3,7 @@ extension HrkString on String {
     if (isEmpty) {
       return '';
     }
-    String capitalizedString = substring(0, 1).toUpperCase();
+    String capitalizedString = this[0].toUpperCase();
     if (length > 1) {
       capitalizedString += substring(1).toLowerCase();
     }

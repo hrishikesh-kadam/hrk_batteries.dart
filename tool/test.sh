@@ -4,7 +4,6 @@ set -ex -o pipefail
 
 dart pub global activate coverage
 
-
 rm -rf coverage
 dart test \
   --exclude-tags non-default \
