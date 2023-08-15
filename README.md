@@ -6,8 +6,13 @@ A library to accumulate required dart helper and utility codes
 
 ## Features
 
-- Easy detection of whether code running in Test without hassle of conditional 
-  imports files
+- [`isDartOrFlutterTest()`]
+- [`Unit`]
+  - [`ValueUnit`]
+  - [`ValueRange`]
+  - [`Distance`]
+    - `DistanceUnit`
+    - `DistanceRange`
 
 ## Getting started
 
@@ -31,3 +36,9 @@ void main() {
   // log.log(level, 'Needs Attention');
 }
 ```
+
+[`isDartOrFlutterTest()`]: lib/src/common_test/common_test.dart
+[`Unit`]: lib/src/unit/unit.dart
+[`ValueUnit`]: lib/src/unit/value_unit.dart
+[`ValueRange`]: lib/src/unit/value_range.dart
+[`Distance`]: lib/src/unit/distance.dart
