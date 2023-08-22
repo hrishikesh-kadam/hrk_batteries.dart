@@ -13,6 +13,10 @@ A library to accumulate required dart helper and utility codes
   - [`Distance`]
     - `DistanceUnit`
     - `DistanceRange`
+- [`HrkDateTime`]
+  - `today()`
+  - `todayUtc()`
+  - `toDate()`
 
 ## Getting started
 
@@ -34,6 +38,10 @@ void main() {
     // level = Level.SEVERE;
   }
   // log.log(level, 'Needs Attention');
+
+  final today = HrkDateTime.today();
+  final todayUtc = HrkDateTime.todayUtc();
+  final date = DateTime.now().toDate();
 }
 ```
 
@@ -42,3 +50,4 @@ void main() {
 [`ValueUnit`]: lib/src/unit/value_unit.dart
 [`ValueRange`]: lib/src/unit/value_range.dart
 [`Distance`]: lib/src/unit/distance.dart
+[`HrkDateTime`]: lib/src/extension/date_time.dart

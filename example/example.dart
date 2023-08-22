@@ -1,3 +1,5 @@
+// ignore_for_file: unused_local_variable
+
 import 'package:hrk_batteries/hrk_batteries.dart';
 
 void main() {
@@ -9,4 +11,8 @@ void main() {
     // level = Level.SEVERE;
   }
   // log.log(level, 'Needs Attention');
+
+  final today = HrkDateTime.today();
+  final todayUtc = HrkDateTime.todayUtc();
+  final date = DateTime.now().toDate();
 }

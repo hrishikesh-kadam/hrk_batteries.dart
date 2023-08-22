@@ -1,3 +1,7 @@
+## 0.3.0
+
+- Add HrkDateTime for today(), todayUtc(), toDate()
+
 ## 0.2.0
 
 - Add Unit, ValueUnit, ValueRange, Distance

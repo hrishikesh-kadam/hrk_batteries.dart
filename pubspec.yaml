@@ -1,5 +1,5 @@
 name: hrk_batteries
-version: 0.2.0
+version: 0.3.0
 
 description: >-
   A library to accumulate required dart helper and utility codes
