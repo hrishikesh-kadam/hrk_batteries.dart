@@ -5,6 +5,7 @@ void main() {
   group('flutter_test', () {
     test('isFlutterTest() default', () {
       expect(isFlutterTest(), false);
+      expect(isFlutterIntegrationTest(), false);
     });
   });
 }

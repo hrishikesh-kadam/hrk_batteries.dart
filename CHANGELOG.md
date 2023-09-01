@@ -1,3 +1,7 @@
+## 0.4.0
+
+- Add `isFlutterIntegrationTest()`
+
 ## 0.3.0
 
 - Add HrkDateTime for today(), todayUtc(), toDate()

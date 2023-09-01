@@ -7,6 +7,8 @@ A library to accumulate required dart helper and utility codes
 ## Features
 
 - [`isDartOrFlutterTest()`]
+- [`isFlutterTest()`]
+- [`isFlutterIntegrationTest()`]
 - [`Unit`]
   - [`ValueUnit`]
   - [`ValueRange`]
@@ -46,6 +48,8 @@ void main() {
 ```
 
 [`isDartOrFlutterTest()`]: lib/src/common_test/common_test.dart
+[`isFlutterTest()`]: lib/src/flutter_test/flutter_test.dart
+[`isFlutterIntegrationTest()`]: lib/src/flutter_test/flutter_test.dart
 [`Unit`]: lib/src/unit/unit.dart
 [`ValueUnit`]: lib/src/unit/value_unit.dart
 [`ValueRange`]: lib/src/unit/value_range.dart
