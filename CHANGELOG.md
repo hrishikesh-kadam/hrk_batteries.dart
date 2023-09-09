@@ -1,3 +1,8 @@
+## 0.5.1
+
+- Add linkToSource for dart doc
+- Update example, test, doc of `localizeDigits()`
+
 ## 0.5.0
 
 - Add `localizeDigits()` to extension on String
