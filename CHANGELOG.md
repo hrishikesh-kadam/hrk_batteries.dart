@@ -1,3 +1,7 @@
+## 0.5.2
+
+- Hardcode revision for dart doc
+
 ## 0.5.1
 
 - Add yq in tool/prerequisite.sh
