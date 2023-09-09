@@ -12,7 +12,12 @@ void main() {
   }
   // log.log(level, 'Needs Attention');
 
-  final today = HrkDateTime.today();
-  final todayUtc = HrkDateTime.todayUtc();
-  final date = DateTime.now().toDate();
+  final DateTime today = HrkDateTime.today();
+  final DateTime todayUtc = HrkDateTime.todayUtc();
+  final DateTime date = DateTime.now().toDate();
+
+  // A०१२३४५६७८९Z
+  final String mrLocalizedString = 'A0123456789Z'.localizeDigits(
+    toZeroDigit: '०',
+  );
 }

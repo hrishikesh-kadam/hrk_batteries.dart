@@ -19,6 +19,9 @@ A library to accumulate required dart helper and utility codes
   - `today()`
   - `todayUtc()`
   - `toDate()`
+- [`HrkString`]
+  - `capitalize()`
+  - `localizeDigits()`
 
 ## Getting started
 
@@ -41,9 +44,14 @@ void main() {
   }
   // log.log(level, 'Needs Attention');
 
-  final today = HrkDateTime.today();
-  final todayUtc = HrkDateTime.todayUtc();
-  final date = DateTime.now().toDate();
+  final DateTime today = HrkDateTime.today();
+  final DateTime todayUtc = HrkDateTime.todayUtc();
+  final DateTime date = DateTime.now().toDate();
+
+  // A०१२३४५६७८९Z
+  final String mrLocalizedString = 'A0123456789Z'.localizeDigits(
+    toZeroDigit: '०',
+  );
 }
 ```
 
@@ -55,3 +63,4 @@ void main() {
 [`ValueRange`]: lib/src/unit/value_range.dart
 [`Distance`]: lib/src/unit/distance.dart
 [`HrkDateTime`]: lib/src/extension/date_time.dart
+[`HrkString`]: lib/src/extension/string.dart

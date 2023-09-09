@@ -1,3 +1,7 @@
+## 0.5.0
+
+- Add `localizeDigits()` to extension on String
+
 ## 0.4.0
 
 - Add `isFlutterIntegrationTest()`
