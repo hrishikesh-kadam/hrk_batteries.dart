@@ -13,15 +13,15 @@ A library to accumulate required dart helper and utility codes
   - [`ValueUnit`]
   - [`ValueRange`]
   - [`Distance`]
-    - `DistanceUnit`
-    - `DistanceRange`
+    - [`DistanceUnit`]
+    - [`DistanceRange`]
 - [`HrkDateTime`]
-  - `today()`
-  - `todayUtc()`
-  - `toDate()`
+  - [`today()`]
+  - [`todayUtc()`]
+  - [`toDate()`]
 - [`HrkString`]
-  - `capitalize()`
-  - `localizeDigits()`
+  - [`capitalize()`]
+  - [`localizeDigits()`]
 
 ## Getting started
 
@@ -55,12 +55,19 @@ void main() {
 }
 ```
 
-[`isDartOrFlutterTest()`]: lib/src/common_test/common_test.dart
-[`isFlutterTest()`]: lib/src/flutter_test/flutter_test.dart
-[`isFlutterIntegrationTest()`]: lib/src/flutter_test/flutter_test.dart
-[`Unit`]: lib/src/unit/unit.dart
-[`ValueUnit`]: lib/src/unit/value_unit.dart
-[`ValueRange`]: lib/src/unit/value_range.dart
-[`Distance`]: lib/src/unit/distance.dart
+[`isDartOrFlutterTest()`]: https://pub.dev/documentation/hrk_batteries/latest/hrk_batteries/isDartOrFlutterTest.html
+[`isFlutterTest()`]: https://pub.dev/documentation/hrk_batteries/latest/hrk_batteries/isFlutterTest.html
+[`isFlutterIntegrationTest()`]: https://pub.dev/documentation/hrk_batteries/latest/hrk_batteries/isFlutterIntegrationTest.html
+[`Unit`]: https://pub.dev/documentation/hrk_batteries/latest/hrk_batteries/Unit-class.html
+[`ValueUnit`]: https://pub.dev/documentation/hrk_batteries/latest/hrk_batteries/ValueUnit-class.html
+[`ValueRange`]: https://pub.dev/documentation/hrk_batteries/latest/hrk_batteries/ValueRange-class.html
+[`Distance`]: https://pub.dev/documentation/hrk_batteries/latest/hrk_batteries/Distance.html
+[`DistanceUnit`]: https://pub.dev/documentation/hrk_batteries/latest/hrk_batteries/DistanceUnit-class.html
+[`DistanceRange`]: https://pub.dev/documentation/hrk_batteries/latest/hrk_batteries/DistanceRange.html
 [`HrkDateTime`]: lib/src/extension/date_time.dart
-[`HrkString`]: lib/src/extension/string.dart
+[`today()`]: https://pub.dev/documentation/hrk_batteries/latest/hrk_batteries/HrkDateTime/today.html
+[`todayUtc()`]: https://pub.dev/documentation/hrk_batteries/latest/hrk_batteries/HrkDateTime/todayUtc.html
+[`toDate()`]: https://pub.dev/documentation/hrk_batteries/latest/hrk_batteries/HrkDateTime/toDate.html
+[`HrkString`]: https://pub.dev/documentation/hrk_batteries/latest/hrk_batteries/HrkString.html
+[`capitalize()`]: https://pub.dev/documentation/hrk_batteries/latest/hrk_batteries/HrkString/capitalize.html
+[`localizeDigits()`]: https://pub.dev/documentation/hrk_batteries/latest/hrk_batteries/HrkString/localizeDigits.html
