@@ -1,5 +1,6 @@
 ## 0.5.1
 
+- Add yq in tool/prerequisite.sh
 - Update links in README.md
 - Add linkToSource for dart doc
 - Update example, test, doc of `localizeDigits()`
