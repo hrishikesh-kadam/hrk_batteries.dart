@@ -10,6 +10,16 @@ extension HrkString on String {
     return capitalizedString;
   }
 
+  /// Zero digits in some languages:
+  /// | Language | Zero Digit | Unicode |
+  /// | ---      | ---        | ---     |
+  /// | Marathi  | ०          | \u0966  |
+  /// | Kannada  | ೦          | \u0ce6  |
+  /// | Bengali  | ০          | \u09e6  |
+  /// | Arabic   | ٠          | \u0660  |
+  /// | Persian  | ۰          | \u06f0  |
+  ///
+  /// For other languages refer https://github.com/dart-lang/i18n/blob/main/pkgs/intl/lib/number_symbols_data.dart
   String localizeDigits({
     String fromZeroDigit = '0',
     required String toZeroDigit,

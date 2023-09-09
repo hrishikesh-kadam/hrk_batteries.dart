@@ -17,7 +17,7 @@ void main() {
   final DateTime date = DateTime.now().toDate();
 
   // A०१२३४५६७८९Z
-  final String mrLocalizedString = 'A0123456789Z'.localizeDigits(
-    toZeroDigit: '०',
+  final String enToMrLocalizedString = 'A0123456789Z'.localizeDigits(
+    toZeroDigit: '\u0966', // toZeroDigit: '०',
   );
 }

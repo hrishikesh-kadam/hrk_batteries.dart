@@ -12,6 +12,8 @@ dart analyze --fatal-infos
 
 tool/test.sh
 
+dart doc
+
 dart pub global activate pana
 dart pub global run pana --no-warning
 

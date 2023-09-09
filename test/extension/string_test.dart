@@ -21,7 +21,7 @@ void main() {
         expect(
           'A0123456789Z',
           'A०१२३४५६७८९Z'.localizeDigits(
-            fromZeroDigit: '०',
+            fromZeroDigit: '\u0966', // fromZeroDigit: '०',
             toZeroDigit: '0',
           ),
         );
@@ -31,15 +31,32 @@ void main() {
         expect(
           'A०१२३४५६७८९Z',
           'A೦೧೨೩೪೫೬೭೮೯Z'.localizeDigits(
-            fromZeroDigit: '೦',
-            toZeroDigit: '०',
+            fromZeroDigit: '\u0ce6', // fromZeroDigit: '೦',
+            toZeroDigit: '\u0966', // toZeroDigit: '०',
           ),
         );
         expect(
           'A೦೧೨೩೪೫೬೭೮೯Z',
           'A०१२३४५६७८९Z'.localizeDigits(
-            fromZeroDigit: '०',
-            toZeroDigit: '೦',
+            fromZeroDigit: '\u0966', // fromZeroDigit: '०',
+            toZeroDigit: '\u0ce6', // toZeroDigit: '೦',
+          ),
+        );
+      });
+
+      test('ar <-> fa', () {
+        expect(
+          'A۰۱۲۳۴۵۶۷۸۹Z',
+          'A٠١٢٣٤٥٦٧٨٩Z'.localizeDigits(
+            fromZeroDigit: '\u0660', // fromZeroDigit: '٠',
+            toZeroDigit: '\u06f0', // toZeroDigit: '۰',
+          ),
+        );
+        expect(
+          'A٠١٢٣٤٥٦٧٨٩Z',
+          'A۰۱۲۳۴۵۶۷۸۹Z'.localizeDigits(
+            fromZeroDigit: '\u06f0', // fromZeroDigit: '۰',
+            toZeroDigit: '\u0660', // toZeroDigit: '٠',
           ),
         );
       });
