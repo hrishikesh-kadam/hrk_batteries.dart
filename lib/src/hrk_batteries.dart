@@ -3,6 +3,7 @@ export 'constants.dart';
 export 'dart_test/dart_test.dart';
 export 'extension/extension.dart';
 export 'flutter_test/flutter_test.dart';
+export 'globals.dart';
 export 'helper/helper.dart';
 export 'typedef.dart';
 export 'unit/unit.dart';

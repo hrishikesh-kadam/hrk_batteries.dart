@@ -1,3 +1,7 @@
+## 0.6.0
+
+- Add `jsonEncoderPretty`
+
 ## 0.5.2
 
 - Hardcode revision for dart doc
