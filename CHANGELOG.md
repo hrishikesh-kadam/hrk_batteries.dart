@@ -1,3 +1,7 @@
+## 0.6.1
+
+- Add more references to `localizeDigits()`
+
 ## 0.6.0
 
 - Add `jsonEncoderPretty`

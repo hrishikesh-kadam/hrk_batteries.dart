@@ -14,12 +14,15 @@ extension HrkString on String {
   /// | Language | Zero Digit | Unicode |
   /// | ---      | ---        | ---     |
   /// | Marathi  | ०          | \u0966  |
-  /// | Kannada  | ೦          | \u0ce6  |
   /// | Bengali  | ০          | \u09e6  |
+  /// | Kannada  | ೦          | \u0ce6  |
   /// | Arabic   | ٠          | \u0660  |
   /// | Persian  | ۰          | \u06f0  |
   ///
-  /// For other languages refer https://github.com/dart-lang/i18n/blob/main/pkgs/intl/lib/number_symbols_data.dart
+  /// References:
+  /// - https://github.com/dart-lang/i18n/blob/main/pkgs/intl/lib/date_symbol_data_local.dart
+  /// - https://github.com/flutter/flutter/blob/master/packages/flutter_localizations/lib/src/l10n/generated_date_localizations.dart
+  /// - https://github.com/dart-lang/i18n/blob/main/pkgs/intl/lib/number_symbols_data.dart
   String localizeDigits({
     String fromZeroDigit = '0',
     required String toZeroDigit,
