@@ -1,3 +1,7 @@
+## 0.7.0
+
+- Add more DistanceUnit, Add conversion logic
+
 ## 0.6.1
 
 - Add more references to `localizeDigits()`
