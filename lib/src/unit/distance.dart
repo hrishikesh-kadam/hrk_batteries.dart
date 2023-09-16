@@ -76,13 +76,11 @@ extension DistanceExt on Distance {
   Distance convert({
     required DistanceUnit to,
   }) {
-    assert(value != null);
-    assert(unit != null);
-    final DistanceUnit from = unit!;
+    final DistanceUnit from = unit;
     if (from == to) {
       return copyWith();
     }
     double conversionFactor = DistanceUnit.conversionMap[from]![to]!;
-    return Distance(value: value! * conversionFactor, unit: to);
+    return Distance(value: value * conversionFactor, unit: to);
   }
 }

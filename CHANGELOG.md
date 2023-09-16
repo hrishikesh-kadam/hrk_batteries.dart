@@ -1,3 +1,8 @@
+## 0.8.0
+
+- Make `value` and `unit` non-nullable in `ValueUnit`
+- Add `VelocityUnit`, `Velocity`
+
 ## 0.7.0
 
 - Add more DistanceUnit, Add conversion logic

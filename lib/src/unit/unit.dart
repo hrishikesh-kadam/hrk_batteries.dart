@@ -3,6 +3,7 @@ import 'package:equatable/equatable.dart';
 export 'distance.dart';
 export 'value_range.dart';
 export 'value_unit.dart';
+export 'velocity.dart';
 
 class Unit with EquatableMixin {
   const Unit({

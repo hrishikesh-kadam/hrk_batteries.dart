@@ -16,8 +16,8 @@ final _privateConstructorUsedError = UnsupportedError(
 
 /// @nodoc
 mixin _$ValueUnit<V, U extends Unit> {
-  V? get value => throw _privateConstructorUsedError;
-  U? get unit => throw _privateConstructorUsedError;
+  V get value => throw _privateConstructorUsedError;
+  U get unit => throw _privateConstructorUsedError;
 
   @JsonKey(ignore: true)
   $ValueUnitCopyWith<V, U, ValueUnit<V, U>> get copyWith =>
@@ -30,7 +30,7 @@ abstract class $ValueUnitCopyWith<V, U extends Unit, $Res> {
           ValueUnit<V, U> value, $Res Function(ValueUnit<V, U>) then) =
       _$ValueUnitCopyWithImpl<V, U, $Res, ValueUnit<V, U>>;
   @useResult
-  $Res call({V? value, U? unit});
+  $Res call({V value, U unit});
 }
 
 /// @nodoc
@@ -53,11 +53,11 @@ class _$ValueUnitCopyWithImpl<V, U extends Unit, $Res,
       value: freezed == value
           ? _value.value
           : value // ignore: cast_nullable_to_non_nullable
-              as V?,
+              as V,
       unit: null == unit
           ? _value.unit
           : unit // ignore: cast_nullable_to_non_nullable
-              as U?,
+              as U,
     ) as $Val);
   }
 }
@@ -70,7 +70,7 @@ abstract class _$$_ValueUnitCopyWith<V, U extends Unit, $Res>
       __$$_ValueUnitCopyWithImpl<V, U, $Res>;
   @override
   @useResult
-  $Res call({V? value, U? unit});
+  $Res call({V value, U unit});
 }
 
 /// @nodoc
@@ -91,11 +91,11 @@ class __$$_ValueUnitCopyWithImpl<V, U extends Unit, $Res>
       value: freezed == value
           ? _value.value
           : value // ignore: cast_nullable_to_non_nullable
-              as V?,
+              as V,
       unit: null == unit
           ? _value.unit
           : unit // ignore: cast_nullable_to_non_nullable
-              as U?,
+              as U,
     ));
   }
 }
@@ -103,12 +103,12 @@ class __$$_ValueUnitCopyWithImpl<V, U extends Unit, $Res>
 /// @nodoc
 
 class _$_ValueUnit<V, U extends Unit> extends _ValueUnit<V, U> {
-  const _$_ValueUnit({this.value, this.unit}) : super._();
+  const _$_ValueUnit({required this.value, required this.unit}) : super._();
 
   @override
-  final V? value;
+  final V value;
   @override
-  final U? unit;
+  final U unit;
 
   @override
   String toString() {
@@ -138,14 +138,14 @@ class _$_ValueUnit<V, U extends Unit> extends _ValueUnit<V, U> {
 }
 
 abstract class _ValueUnit<V, U extends Unit> extends ValueUnit<V, U> {
-  const factory _ValueUnit({final V? value, final U? unit}) =
+  const factory _ValueUnit({required final V value, required final U unit}) =
       _$_ValueUnit<V, U>;
   const _ValueUnit._() : super._();
 
   @override
-  V? get value;
+  V get value;
   @override
-  U? get unit;
+  U get unit;
   @override
   @JsonKey(ignore: true)
   _$$_ValueUnitCopyWith<V, U, _$_ValueUnit<V, U>> get copyWith =>

@@ -15,6 +15,8 @@ A library to accumulate required dart helper and utility codes
   - [`Distance`]
     - [`DistanceUnit`]
     - [`DistanceRange`]
+  - [`Velocity`]
+    - [`VelocityUnit`]
 - [`HrkDateTime`]
   - [`today()`]
   - [`todayUtc()`]
@@ -64,6 +66,8 @@ void main() {
 [`Distance`]: https://pub.dev/documentation/hrk_batteries/latest/hrk_batteries/Distance.html
 [`DistanceUnit`]: https://pub.dev/documentation/hrk_batteries/latest/hrk_batteries/DistanceUnit-class.html
 [`DistanceRange`]: https://pub.dev/documentation/hrk_batteries/latest/hrk_batteries/DistanceRange.html
+[`Velocity`]: https://pub.dev/documentation/hrk_batteries/latest/hrk_batteries/Velocity.html
+[`VelocityUnit`]: https://pub.dev/documentation/hrk_batteries/latest/hrk_batteries/VelocityUnit-class.html
 [`HrkDateTime`]: lib/src/extension/date_time.dart
 [`today()`]: https://pub.dev/documentation/hrk_batteries/latest/hrk_batteries/HrkDateTime/today.html
 [`todayUtc()`]: https://pub.dev/documentation/hrk_batteries/latest/hrk_batteries/HrkDateTime/todayUtc.html

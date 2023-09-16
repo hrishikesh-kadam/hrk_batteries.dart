@@ -16,8 +16,8 @@ final _privateConstructorUsedError = UnsupportedError(
 
 /// @nodoc
 mixin _$ValueRange<V, U extends Unit> {
-  ValueUnit<V, U>? get start => throw _privateConstructorUsedError;
-  ValueUnit<V, U>? get end => throw _privateConstructorUsedError;
+  ValueUnit<V, U> get start => throw _privateConstructorUsedError;
+  ValueUnit<V, U> get end => throw _privateConstructorUsedError;
 
   @JsonKey(ignore: true)
   $ValueRangeCopyWith<V, U, ValueRange<V, U>> get copyWith =>
@@ -30,10 +30,10 @@ abstract class $ValueRangeCopyWith<V, U extends Unit, $Res> {
           ValueRange<V, U> value, $Res Function(ValueRange<V, U>) then) =
       _$ValueRangeCopyWithImpl<V, U, $Res, ValueRange<V, U>>;
   @useResult
-  $Res call({ValueUnit<V, U>? start, ValueUnit<V, U>? end});
+  $Res call({ValueUnit<V, U> start, ValueUnit<V, U> end});
 
-  $ValueUnitCopyWith<V, U, $Res>? get start;
-  $ValueUnitCopyWith<V, U, $Res>? get end;
+  $ValueUnitCopyWith<V, U, $Res> get start;
+  $ValueUnitCopyWith<V, U, $Res> get end;
 }
 
 /// @nodoc
@@ -49,41 +49,33 @@ class _$ValueRangeCopyWithImpl<V, U extends Unit, $Res,
   @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? start = freezed,
-    Object? end = freezed,
+    Object? start = null,
+    Object? end = null,
   }) {
     return _then(_value.copyWith(
-      start: freezed == start
+      start: null == start
           ? _value.start
           : start // ignore: cast_nullable_to_non_nullable
-              as ValueUnit<V, U>?,
-      end: freezed == end
+              as ValueUnit<V, U>,
+      end: null == end
           ? _value.end
           : end // ignore: cast_nullable_to_non_nullable
-              as ValueUnit<V, U>?,
+              as ValueUnit<V, U>,
     ) as $Val);
   }
 
   @override
   @pragma('vm:prefer-inline')
-  $ValueUnitCopyWith<V, U, $Res>? get start {
-    if (_value.start == null) {
-      return null;
-    }
-
-    return $ValueUnitCopyWith<V, U, $Res>(_value.start!, (value) {
+  $ValueUnitCopyWith<V, U, $Res> get start {
+    return $ValueUnitCopyWith<V, U, $Res>(_value.start, (value) {
       return _then(_value.copyWith(start: value) as $Val);
     });
   }
 
   @override
   @pragma('vm:prefer-inline')
-  $ValueUnitCopyWith<V, U, $Res>? get end {
-    if (_value.end == null) {
-      return null;
-    }
-
-    return $ValueUnitCopyWith<V, U, $Res>(_value.end!, (value) {
+  $ValueUnitCopyWith<V, U, $Res> get end {
+    return $ValueUnitCopyWith<V, U, $Res>(_value.end, (value) {
       return _then(_value.copyWith(end: value) as $Val);
     });
   }
@@ -97,12 +89,12 @@ abstract class _$$_ValueRangeCopyWith<V, U extends Unit, $Res>
       __$$_ValueRangeCopyWithImpl<V, U, $Res>;
   @override
   @useResult
-  $Res call({ValueUnit<V, U>? start, ValueUnit<V, U>? end});
+  $Res call({ValueUnit<V, U> start, ValueUnit<V, U> end});
 
   @override
-  $ValueUnitCopyWith<V, U, $Res>? get start;
+  $ValueUnitCopyWith<V, U, $Res> get start;
   @override
-  $ValueUnitCopyWith<V, U, $Res>? get end;
+  $ValueUnitCopyWith<V, U, $Res> get end;
 }
 
 /// @nodoc
@@ -116,18 +108,18 @@ class __$$_ValueRangeCopyWithImpl<V, U extends Unit, $Res>
   @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? start = freezed,
-    Object? end = freezed,
+    Object? start = null,
+    Object? end = null,
   }) {
     return _then(_$_ValueRange<V, U>(
-      start: freezed == start
+      start: null == start
           ? _value.start
           : start // ignore: cast_nullable_to_non_nullable
-              as ValueUnit<V, U>?,
-      end: freezed == end
+              as ValueUnit<V, U>,
+      end: null == end
           ? _value.end
           : end // ignore: cast_nullable_to_non_nullable
-              as ValueUnit<V, U>?,
+              as ValueUnit<V, U>,
     ));
   }
 }
@@ -135,12 +127,12 @@ class __$$_ValueRangeCopyWithImpl<V, U extends Unit, $Res>
 /// @nodoc
 
 class _$_ValueRange<V, U extends Unit> implements _ValueRange<V, U> {
-  const _$_ValueRange({this.start, this.end});
+  const _$_ValueRange({required this.start, required this.end});
 
   @override
-  final ValueUnit<V, U>? start;
+  final ValueUnit<V, U> start;
   @override
-  final ValueUnit<V, U>? end;
+  final ValueUnit<V, U> end;
 
   @override
   String toString() {
@@ -168,13 +160,13 @@ class _$_ValueRange<V, U extends Unit> implements _ValueRange<V, U> {
 
 abstract class _ValueRange<V, U extends Unit> implements ValueRange<V, U> {
   const factory _ValueRange(
-      {final ValueUnit<V, U>? start,
-      final ValueUnit<V, U>? end}) = _$_ValueRange<V, U>;
+      {required final ValueUnit<V, U> start,
+      required final ValueUnit<V, U> end}) = _$_ValueRange<V, U>;
 
   @override
-  ValueUnit<V, U>? get start;
+  ValueUnit<V, U> get start;
   @override
-  ValueUnit<V, U>? get end;
+  ValueUnit<V, U> get end;
   @override
   @JsonKey(ignore: true)
   _$$_ValueRangeCopyWith<V, U, _$_ValueRange<V, U>> get copyWith =>

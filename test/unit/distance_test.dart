@@ -47,8 +47,8 @@ void main() {
           to: DistanceUnit.au,
         );
         expect(
-          roundTripAuDistance.value!.toStringAsPrecision(6),
-          auDistance.value!.toStringAsPrecision(6),
+          roundTripAuDistance.value.toStringAsPrecision(6),
+          auDistance.value.toStringAsPrecision(6),
         );
         expect(roundTripAuDistance.unit, auDistance.unit);
       });

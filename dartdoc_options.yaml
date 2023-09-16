@@ -1,4 +1,4 @@
 dartdoc:
   linkToSource:
     root: '.'
-    uriTemplate: 'https://github.com/hrishikesh-kadam/hrk_batteries.dart/blob/v0.7.0/%f%#L%l%'
+    uriTemplate: 'https://github.com/hrishikesh-kadam/hrk_batteries.dart/blob/v0.8.0/%f%#L%l%'
