@@ -10,26 +10,26 @@ typedef Velocity = ValueUnit<double, VelocityUnit>;
 class VelocityUnit extends Unit {
   const VelocityUnit({required super.symbol});
 
-  static const kmps = VelocityUnit(symbol: 'km/s');
   static const miph = VelocityUnit(symbol: 'mi/h');
+  static const kmps = VelocityUnit(symbol: 'km/s');
   static const aupd = VelocityUnit(symbol: 'au/d');
 
-  static const List<VelocityUnit> all = [kmps, miph, aupd];
+  static const List<VelocityUnit> all = [miph, kmps, aupd];
 
   static final Map<VelocityUnit, Map<VelocityUnit, double>> conversionMap = {
-    VelocityUnit.kmps: {
-      VelocityUnit.kmps: 1,
-      VelocityUnit.miph: 2236.936,
-      VelocityUnit.aupd: 0.000577548,
-    },
     VelocityUnit.miph: {
-      VelocityUnit.kmps: 0.00044704,
       VelocityUnit.miph: 1,
+      VelocityUnit.kmps: 0.00044704,
       VelocityUnit.aupd: 0.00000025819,
     },
+    VelocityUnit.kmps: {
+      VelocityUnit.miph: 2236.936,
+      VelocityUnit.kmps: 1,
+      VelocityUnit.aupd: 0.000577548,
+    },
     VelocityUnit.aupd: {
-      VelocityUnit.kmps: 1731.46,
       VelocityUnit.miph: 3873000,
+      VelocityUnit.kmps: 1731.46,
       VelocityUnit.aupd: 1,
     },
   };

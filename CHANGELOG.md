@@ -1,3 +1,7 @@
+## 0.9.0
+
+- Add meter and feet to `DistanceUnit`
+
 ## 0.8.0
 
 - Make `value` and `unit` non-nullable in `ValueUnit`
