@@ -63,22 +63,22 @@ class _$ValueUnitCopyWithImpl<V, U extends Unit, $Res,
 }
 
 /// @nodoc
-abstract class _$$_ValueUnitCopyWith<V, U extends Unit, $Res>
+abstract class _$$ValueUnitImplCopyWith<V, U extends Unit, $Res>
     implements $ValueUnitCopyWith<V, U, $Res> {
-  factory _$$_ValueUnitCopyWith(
-          _$_ValueUnit<V, U> value, $Res Function(_$_ValueUnit<V, U>) then) =
-      __$$_ValueUnitCopyWithImpl<V, U, $Res>;
+  factory _$$ValueUnitImplCopyWith(_$ValueUnitImpl<V, U> value,
+          $Res Function(_$ValueUnitImpl<V, U>) then) =
+      __$$ValueUnitImplCopyWithImpl<V, U, $Res>;
   @override
   @useResult
   $Res call({V value, U unit});
 }
 
 /// @nodoc
-class __$$_ValueUnitCopyWithImpl<V, U extends Unit, $Res>
-    extends _$ValueUnitCopyWithImpl<V, U, $Res, _$_ValueUnit<V, U>>
-    implements _$$_ValueUnitCopyWith<V, U, $Res> {
-  __$$_ValueUnitCopyWithImpl(
-      _$_ValueUnit<V, U> _value, $Res Function(_$_ValueUnit<V, U>) _then)
+class __$$ValueUnitImplCopyWithImpl<V, U extends Unit, $Res>
+    extends _$ValueUnitCopyWithImpl<V, U, $Res, _$ValueUnitImpl<V, U>>
+    implements _$$ValueUnitImplCopyWith<V, U, $Res> {
+  __$$ValueUnitImplCopyWithImpl(
+      _$ValueUnitImpl<V, U> _value, $Res Function(_$ValueUnitImpl<V, U>) _then)
       : super(_value, _then);
 
   @pragma('vm:prefer-inline')
@@ -87,7 +87,7 @@ class __$$_ValueUnitCopyWithImpl<V, U extends Unit, $Res>
     Object? value = freezed,
     Object? unit = null,
   }) {
-    return _then(_$_ValueUnit<V, U>(
+    return _then(_$ValueUnitImpl<V, U>(
       value: freezed == value
           ? _value.value
           : value // ignore: cast_nullable_to_non_nullable
@@ -102,8 +102,8 @@ class __$$_ValueUnitCopyWithImpl<V, U extends Unit, $Res>
 
 /// @nodoc
 
-class _$_ValueUnit<V, U extends Unit> extends _ValueUnit<V, U> {
-  const _$_ValueUnit({required this.value, required this.unit}) : super._();
+class _$ValueUnitImpl<V, U extends Unit> extends _ValueUnit<V, U> {
+  const _$ValueUnitImpl({required this.value, required this.unit}) : super._();
 
   @override
   final V value;
@@ -119,7 +119,7 @@ class _$_ValueUnit<V, U extends Unit> extends _ValueUnit<V, U> {
   bool operator ==(dynamic other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$_ValueUnit<V, U> &&
+            other is _$ValueUnitImpl<V, U> &&
             const DeepCollectionEquality().equals(other.value, value) &&
             const DeepCollectionEquality().equals(other.unit, unit));
   }
@@ -133,13 +133,14 @@ class _$_ValueUnit<V, U extends Unit> extends _ValueUnit<V, U> {
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
-  _$$_ValueUnitCopyWith<V, U, _$_ValueUnit<V, U>> get copyWith =>
-      __$$_ValueUnitCopyWithImpl<V, U, _$_ValueUnit<V, U>>(this, _$identity);
+  _$$ValueUnitImplCopyWith<V, U, _$ValueUnitImpl<V, U>> get copyWith =>
+      __$$ValueUnitImplCopyWithImpl<V, U, _$ValueUnitImpl<V, U>>(
+          this, _$identity);
 }
 
 abstract class _ValueUnit<V, U extends Unit> extends ValueUnit<V, U> {
   const factory _ValueUnit({required final V value, required final U unit}) =
-      _$_ValueUnit<V, U>;
+      _$ValueUnitImpl<V, U>;
   const _ValueUnit._() : super._();
 
   @override
@@ -148,6 +149,6 @@ abstract class _ValueUnit<V, U extends Unit> extends ValueUnit<V, U> {
   U get unit;
   @override
   @JsonKey(ignore: true)
-  _$$_ValueUnitCopyWith<V, U, _$_ValueUnit<V, U>> get copyWith =>
+  _$$ValueUnitImplCopyWith<V, U, _$ValueUnitImpl<V, U>> get copyWith =>
       throw _privateConstructorUsedError;
 }

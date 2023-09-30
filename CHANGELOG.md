@@ -1,3 +1,7 @@
+## 0.9.1
+
+- Integrate freezed changes
+
 ## 0.9.0
 
 - Add meter and feet to `DistanceUnit`

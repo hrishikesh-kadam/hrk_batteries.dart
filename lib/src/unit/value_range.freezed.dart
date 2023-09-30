@@ -82,11 +82,11 @@ class _$ValueRangeCopyWithImpl<V, U extends Unit, $Res,
 }
 
 /// @nodoc
-abstract class _$$_ValueRangeCopyWith<V, U extends Unit, $Res>
+abstract class _$$ValueRangeImplCopyWith<V, U extends Unit, $Res>
     implements $ValueRangeCopyWith<V, U, $Res> {
-  factory _$$_ValueRangeCopyWith(
-          _$_ValueRange<V, U> value, $Res Function(_$_ValueRange<V, U>) then) =
-      __$$_ValueRangeCopyWithImpl<V, U, $Res>;
+  factory _$$ValueRangeImplCopyWith(_$ValueRangeImpl<V, U> value,
+          $Res Function(_$ValueRangeImpl<V, U>) then) =
+      __$$ValueRangeImplCopyWithImpl<V, U, $Res>;
   @override
   @useResult
   $Res call({ValueUnit<V, U> start, ValueUnit<V, U> end});
@@ -98,11 +98,11 @@ abstract class _$$_ValueRangeCopyWith<V, U extends Unit, $Res>
 }
 
 /// @nodoc
-class __$$_ValueRangeCopyWithImpl<V, U extends Unit, $Res>
-    extends _$ValueRangeCopyWithImpl<V, U, $Res, _$_ValueRange<V, U>>
-    implements _$$_ValueRangeCopyWith<V, U, $Res> {
-  __$$_ValueRangeCopyWithImpl(
-      _$_ValueRange<V, U> _value, $Res Function(_$_ValueRange<V, U>) _then)
+class __$$ValueRangeImplCopyWithImpl<V, U extends Unit, $Res>
+    extends _$ValueRangeCopyWithImpl<V, U, $Res, _$ValueRangeImpl<V, U>>
+    implements _$$ValueRangeImplCopyWith<V, U, $Res> {
+  __$$ValueRangeImplCopyWithImpl(_$ValueRangeImpl<V, U> _value,
+      $Res Function(_$ValueRangeImpl<V, U>) _then)
       : super(_value, _then);
 
   @pragma('vm:prefer-inline')
@@ -111,7 +111,7 @@ class __$$_ValueRangeCopyWithImpl<V, U extends Unit, $Res>
     Object? start = null,
     Object? end = null,
   }) {
-    return _then(_$_ValueRange<V, U>(
+    return _then(_$ValueRangeImpl<V, U>(
       start: null == start
           ? _value.start
           : start // ignore: cast_nullable_to_non_nullable
@@ -126,8 +126,8 @@ class __$$_ValueRangeCopyWithImpl<V, U extends Unit, $Res>
 
 /// @nodoc
 
-class _$_ValueRange<V, U extends Unit> implements _ValueRange<V, U> {
-  const _$_ValueRange({required this.start, required this.end});
+class _$ValueRangeImpl<V, U extends Unit> implements _ValueRange<V, U> {
+  const _$ValueRangeImpl({required this.start, required this.end});
 
   @override
   final ValueUnit<V, U> start;
@@ -143,7 +143,7 @@ class _$_ValueRange<V, U extends Unit> implements _ValueRange<V, U> {
   bool operator ==(dynamic other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$_ValueRange<V, U> &&
+            other is _$ValueRangeImpl<V, U> &&
             (identical(other.start, start) || other.start == start) &&
             (identical(other.end, end) || other.end == end));
   }
@@ -154,14 +154,15 @@ class _$_ValueRange<V, U extends Unit> implements _ValueRange<V, U> {
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
-  _$$_ValueRangeCopyWith<V, U, _$_ValueRange<V, U>> get copyWith =>
-      __$$_ValueRangeCopyWithImpl<V, U, _$_ValueRange<V, U>>(this, _$identity);
+  _$$ValueRangeImplCopyWith<V, U, _$ValueRangeImpl<V, U>> get copyWith =>
+      __$$ValueRangeImplCopyWithImpl<V, U, _$ValueRangeImpl<V, U>>(
+          this, _$identity);
 }
 
 abstract class _ValueRange<V, U extends Unit> implements ValueRange<V, U> {
   const factory _ValueRange(
       {required final ValueUnit<V, U> start,
-      required final ValueUnit<V, U> end}) = _$_ValueRange<V, U>;
+      required final ValueUnit<V, U> end}) = _$ValueRangeImpl<V, U>;
 
   @override
   ValueUnit<V, U> get start;
@@ -169,6 +170,6 @@ abstract class _ValueRange<V, U extends Unit> implements ValueRange<V, U> {
   ValueUnit<V, U> get end;
   @override
   @JsonKey(ignore: true)
-  _$$_ValueRangeCopyWith<V, U, _$_ValueRange<V, U>> get copyWith =>
+  _$$ValueRangeImplCopyWith<V, U, _$ValueRangeImpl<V, U>> get copyWith =>
       throw _privateConstructorUsedError;
 }
