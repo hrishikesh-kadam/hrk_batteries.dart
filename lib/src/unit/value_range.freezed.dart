@@ -140,7 +140,7 @@ class _$ValueRangeImpl<V, U extends Unit> implements _ValueRange<V, U> {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
             other is _$ValueRangeImpl<V, U> &&

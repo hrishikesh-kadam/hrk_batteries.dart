@@ -116,7 +116,7 @@ class _$ValueUnitImpl<V, U extends Unit> extends _ValueUnit<V, U> {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
             other is _$ValueUnitImpl<V, U> &&

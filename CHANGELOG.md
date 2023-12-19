@@ -1,3 +1,7 @@
+## 0.9.2
+
+- Integrate freezed 2.4.6 changes
+
 ## 0.9.1
 
 - Integrate freezed changes
