@@ -1,3 +1,8 @@
+## 1.0.0
+
+- Integrate freezed 2.5.5 changes
+- Bump hrk_analysis to ^1.0.0
+
 ## 0.9.2
 
 - Integrate freezed 2.4.6 changes

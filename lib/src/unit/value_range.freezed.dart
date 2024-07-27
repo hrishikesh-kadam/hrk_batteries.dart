@@ -19,7 +19,9 @@ mixin _$ValueRange<V, U extends Unit> {
   ValueUnit<V, U> get start => throw _privateConstructorUsedError;
   ValueUnit<V, U> get end => throw _privateConstructorUsedError;
 
-  @JsonKey(ignore: true)
+  /// Create a copy of ValueRange
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   $ValueRangeCopyWith<V, U, ValueRange<V, U>> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -46,6 +48,8 @@ class _$ValueRangeCopyWithImpl<V, U extends Unit, $Res,
   // ignore: unused_field
   final $Res Function($Val) _then;
 
+  /// Create a copy of ValueRange
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -64,6 +68,8 @@ class _$ValueRangeCopyWithImpl<V, U extends Unit, $Res,
     ) as $Val);
   }
 
+  /// Create a copy of ValueRange
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $ValueUnitCopyWith<V, U, $Res> get start {
@@ -72,6 +78,8 @@ class _$ValueRangeCopyWithImpl<V, U extends Unit, $Res,
     });
   }
 
+  /// Create a copy of ValueRange
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $ValueUnitCopyWith<V, U, $Res> get end {
@@ -105,6 +113,8 @@ class __$$ValueRangeImplCopyWithImpl<V, U extends Unit, $Res>
       $Res Function(_$ValueRangeImpl<V, U>) _then)
       : super(_value, _then);
 
+  /// Create a copy of ValueRange
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -151,7 +161,9 @@ class _$ValueRangeImpl<V, U extends Unit> implements _ValueRange<V, U> {
   @override
   int get hashCode => Object.hash(runtimeType, start, end);
 
-  @JsonKey(ignore: true)
+  /// Create a copy of ValueRange
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   @pragma('vm:prefer-inline')
   _$$ValueRangeImplCopyWith<V, U, _$ValueRangeImpl<V, U>> get copyWith =>
@@ -168,8 +180,11 @@ abstract class _ValueRange<V, U extends Unit> implements ValueRange<V, U> {
   ValueUnit<V, U> get start;
   @override
   ValueUnit<V, U> get end;
+
+  /// Create a copy of ValueRange
+  /// with the given fields replaced by the non-null parameter values.
   @override
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   _$$ValueRangeImplCopyWith<V, U, _$ValueRangeImpl<V, U>> get copyWith =>
       throw _privateConstructorUsedError;
 }

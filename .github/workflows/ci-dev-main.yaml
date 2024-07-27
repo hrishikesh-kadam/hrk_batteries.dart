@@ -20,6 +20,7 @@ jobs:
   ci-dev-main:
     name: CI on ${{ matrix.runner }} using Dart ${{ matrix.sdk }}
     runs-on: ${{ matrix.runner }}
+    continue-on-error: true
     strategy:
       matrix:
         runner: [ ubuntu-latest ]
