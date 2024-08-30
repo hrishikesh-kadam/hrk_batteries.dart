@@ -5,5 +5,6 @@ export 'extension/extension.dart';
 export 'flutter_test/flutter_test.dart';
 export 'globals.dart';
 export 'helper/helper.dart';
+export 'network_state.dart';
 export 'typedef.dart';
 export 'unit/unit.dart';

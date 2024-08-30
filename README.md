@@ -24,6 +24,7 @@ A library to accumulate required dart helper and utility codes
 - [`HrkString`]
   - [`capitalize()`]
   - [`localizeDigits()`]
+- [`NetworkState`]
 
 ## Getting started
 
@@ -75,3 +76,4 @@ void main() {
 [`HrkString`]: https://pub.dev/documentation/hrk_batteries/latest/hrk_batteries/HrkString.html
 [`capitalize()`]: https://pub.dev/documentation/hrk_batteries/latest/hrk_batteries/HrkString/capitalize.html
 [`localizeDigits()`]: https://pub.dev/documentation/hrk_batteries/latest/hrk_batteries/HrkString/localizeDigits.html
+[`NetworkState`]: https://pub.dev/documentation/hrk_batteries/latest/hrk_batteries/NetworkState.html
