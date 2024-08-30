@@ -16,8 +16,8 @@ dart pub global run coverage:format_coverage \
   --base-directory . \
   --lcov \
   --check-ignore
-lcov --list coverage/default-lcov.info \
-  | grep -v ".*|.*100%.*|.*|"
+# lcov --list coverage/default-lcov.info \
+#   | grep -v ".*|.*100%.*|.*|"
 
 DART_TEST=true dart test \
   --tags with-dart-test-env \
@@ -30,8 +30,36 @@ dart pub global run coverage:format_coverage \
   --base-directory . \
   --lcov \
   --check-ignore
-lcov --list coverage/with-dart-test-env-lcov.info \
-  | grep -v ".*|.*100%.*|.*|"
+# lcov --list coverage/with-dart-test-env-lcov.info \
+#   | grep -v ".*|.*100%.*|.*|"
+
+env "dart.vm.product=true" dart test \
+  --tags with-release-env \
+  --coverage coverage \
+  test
+dart pub global run coverage:format_coverage \
+  --in coverage/test/ \
+  --out coverage/with-release-env-lcov.info \
+  --report-on lib \
+  --base-directory . \
+  --lcov \
+  --check-ignore
+# lcov --list coverage/with-release-env-lcov.info \
+#   | grep -v ".*|.*100%.*|.*|"
+
+env "dart.vm.profile=true" dart test \
+  --tags with-profile-env \
+  --coverage coverage \
+  test
+dart pub global run coverage:format_coverage \
+  --in coverage/test/ \
+  --out coverage/with-profile-env-lcov.info \
+  --report-on lib \
+  --base-directory . \
+  --lcov \
+  --check-ignore
+# lcov --list coverage/with-profile-env-lcov.info \
+#   | grep -v ".*|.*100%.*|.*|"
 
 lcov --add-tracefile coverage/default-lcov.info \
   --add-tracefile coverage/with-dart-test-env-lcov.info \

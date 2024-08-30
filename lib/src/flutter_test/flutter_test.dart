@@ -1,5 +1,5 @@
-import 'flutter_test_non_web.dart'
-    if (dart.library.html) 'flutter_test_web.dart' as platform;
+import 'flutter_test_io.dart'
+    if (dart.library.js_interop) 'flutter_test_web.dart' as platform;
 
 // TODO(hrishikesh-kadam): Duplicate isFlutterTest() and isFlutterIntegrationTest()
 // in hrk_flutter_batteries

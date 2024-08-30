@@ -2,7 +2,7 @@
 
 set -e -o pipefail
 
-source tool/shell/logs-env-posix.sh
+source tool/shell/logs-env.sh
 
 VERSION=$(yq .version pubspec.yaml)
 EXPECTED_URI_TEMPLATE="https://github.com/hrishikesh-kadam/hrk_batteries.dart/blob/v$VERSION/%f%#L%l%"

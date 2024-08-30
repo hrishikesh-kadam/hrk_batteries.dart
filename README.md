@@ -1,6 +1,6 @@
-[![ci](https://github.com/hrishikesh-kadam/hrk_batteries.dart/actions/workflows/ci.yaml/badge.svg)](https://github.com/hrishikesh-kadam/hrk_batteries.dart/actions/workflows/ci.yaml)
-[![codecov](https://codecov.io/gh/hrishikesh-kadam/hrk_batteries.dart/branch/main/graph/badge.svg)](https://codecov.io/gh/hrishikesh-kadam/hrk_batteries.dart)
-[![pub package](https://img.shields.io/pub/v/hrk_batteries.svg)](https://pub.dev/packages/hrk_batteries)
+[![ci][ci-badge]][ci-link]
+[![pub package link][pub-badge]][pub-link]
+[![codecov link][codecov-badge]][codecov-link]
 
 A library to accumulate required dart helper and utility codes
 
@@ -9,6 +9,11 @@ A library to accumulate required dart helper and utility codes
 - [`isDartOrFlutterTest()`]
 - [`isFlutterTest()`]
 - [`isFlutterIntegrationTest()`]
+- Build Modes
+  - [`isReleaseMode()`]
+  - [`isProfileMode()`]
+  - [`isDebugMode()`]
+  - [`getBuildModeString()`]
 - [`Unit`]
   - [`ValueUnit`]
   - [`ValueRange`]
@@ -58,9 +63,20 @@ void main() {
 }
 ```
 
+
+[ci-badge]: https://github.com/hrishikesh-kadam/hrk_batteries.dart/actions/workflows/ci.yaml/badge.svg
+[ci-link]: https://github.com/hrishikesh-kadam/hrk_batteries.dart/actions/workflows/ci.yaml
+[pub-badge]: https://img.shields.io/pub/v/hrk_batteries.svg
+[pub-link]: https://pub.dev/packages/hrk_batteries
+[codecov-badge]: https://codecov.io/gh/hrishikesh-kadam/hrk_batteries.dart/branch/main/graph/badge.svg
+[codecov-link]: https://codecov.io/gh/hrishikesh-kadam/hrk_batteries.dart
 [`isDartOrFlutterTest()`]: https://pub.dev/documentation/hrk_batteries/latest/hrk_batteries/isDartOrFlutterTest.html
 [`isFlutterTest()`]: https://pub.dev/documentation/hrk_batteries/latest/hrk_batteries/isFlutterTest.html
 [`isFlutterIntegrationTest()`]: https://pub.dev/documentation/hrk_batteries/latest/hrk_batteries/isFlutterIntegrationTest.html
+[`isReleaseMode()`]: https://pub.dev/documentation/hrk_batteries/latest/hrk_batteries/isReleaseMode.html
+[`isProfileMode()`]: https://pub.dev/documentation/hrk_batteries/latest/hrk_batteries/isProfileMode.html
+[`isDebugMode()`]: https://pub.dev/documentation/hrk_batteries/latest/hrk_batteries/isDebugMode.html
+[`getBuildModeString()`]: https://pub.dev/documentation/hrk_batteries/latest/hrk_batteries/getBuildModeString.html
 [`Unit`]: https://pub.dev/documentation/hrk_batteries/latest/hrk_batteries/Unit-class.html
 [`ValueUnit`]: https://pub.dev/documentation/hrk_batteries/latest/hrk_batteries/ValueUnit-class.html
 [`ValueRange`]: https://pub.dev/documentation/hrk_batteries/latest/hrk_batteries/ValueRange-class.html

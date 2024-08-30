@@ -1,3 +1,13 @@
+## 2.0.0
+
+- Breaking change:
+  - Replace:
+    - `kReleaseMode` with `isReleaseMode()`
+    - `kProfileMode` with `isProfileMode()`
+    - `kDebugMode` with `isDebugMode()`
+- Make package WASM compatibile
+- Add `getBuildModeString()`
+
 ## 1.1.0
 
 - Add `NetworkState`

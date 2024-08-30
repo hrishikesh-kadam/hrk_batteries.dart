@@ -1,4 +1,4 @@
-import 'helper_non_web.dart' if (dart.library.html) 'helper_web.dart'
+import 'helper_io.dart' if (dart.library.js_interop) 'helper_web.dart'
     as platform;
 
 bool isAndroid = platform.isAndroid;
