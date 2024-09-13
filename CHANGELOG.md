@@ -1,3 +1,7 @@
+## 2.1.0
+
+- Add `Pubspec.getVersionMajorMinorPatch()`
+
 ## 2.0.0
 
 - Breaking change:
