@@ -26,6 +26,13 @@ A library to accumulate required dart helper and utility codes
   - [`today()`]
   - [`todayUtc()`]
   - [`toDate()`]
+  - [`daysInMonth()`]
+  - [`isLeapYear()`]
+  - [`startOfMonth()`]
+  - [`endOfMonth()`]
+  - [`startOfDay()`]
+  - [`endOfDay()`]
+  - [`noon()`]
 - [`HrkString`]
   - [`capitalize()`]
   - [`localizeDigits()`]
@@ -55,6 +62,20 @@ void main() {
   final DateTime today = HrkDateTime.today();
   final DateTime todayUtc = HrkDateTime.todayUtc();
   final DateTime date = DateTime.now().toDate();
+
+  int daysInMonth = DateTime(2000, 2).daysInMonth(); // 29
+  daysInMonth = DateTime(2100, 2).daysInMonth(); // 28
+
+  bool leapYear = DateTime(2000, 2).isLeapYear(); // true
+  leapYear = DateTime(2100, 2).isLeapYear(); // false
+
+  final DateTime startOfMonth = DateTime.now().startOfMonth();
+  final DateTime endOfMonth = DateTime.now().endOfMonth();
+
+  final DateTime startOfDay = DateTime.now().startOfDay();
+  final DateTime endOfDay = DateTime.now().endOfDay();
+
+  final DateTime noon = DateTime.now().noon();
 
   // A०१२३४५६७८९Z
   final String enToMrLocalizedString = 'A0123456789Z'.localizeDigits(
@@ -89,6 +110,13 @@ void main() {
 [`today()`]: https://pub.dev/documentation/hrk_batteries/latest/hrk_batteries/HrkDateTime/today.html
 [`todayUtc()`]: https://pub.dev/documentation/hrk_batteries/latest/hrk_batteries/HrkDateTime/todayUtc.html
 [`toDate()`]: https://pub.dev/documentation/hrk_batteries/latest/hrk_batteries/HrkDateTime/toDate.html
+[`daysInMonth()`]: https://pub.dev/documentation/hrk_batteries/latest/hrk_batteries/HrkDateTime/daysInMonth.html
+[`isLeapYear()`]: https://pub.dev/documentation/hrk_batteries/latest/hrk_batteries/HrkDateTime/isLeapYear.html
+[`startOfMonth()`]: https://pub.dev/documentation/hrk_batteries/latest/hrk_batteries/HrkDateTime/startOfMonth.html
+[`endOfMonth()`]: https://pub.dev/documentation/hrk_batteries/latest/hrk_batteries/HrkDateTime/endOfMonth.html
+[`startOfDay()`]: https://pub.dev/documentation/hrk_batteries/latest/hrk_batteries/HrkDateTime/startOfDay.html
+[`endOfDay()`]: https://pub.dev/documentation/hrk_batteries/latest/hrk_batteries/HrkDateTime/endOfDay.html
+[`noon()`]: https://pub.dev/documentation/hrk_batteries/latest/hrk_batteries/HrkDateTime/noon.html
 [`HrkString`]: https://pub.dev/documentation/hrk_batteries/latest/hrk_batteries/HrkString.html
 [`capitalize()`]: https://pub.dev/documentation/hrk_batteries/latest/hrk_batteries/HrkString/capitalize.html
 [`localizeDigits()`]: https://pub.dev/documentation/hrk_batteries/latest/hrk_batteries/HrkString/localizeDigits.html

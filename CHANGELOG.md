@@ -1,3 +1,14 @@
+## 2.2.0
+
+- Add following helper methods to `HrkDateTime`
+  - `daysInMonth()`
+  - `isLeapYear()`
+  - `startOfMonth()`
+  - `endOfMonth()`
+  - `startOfDay()`
+  - `endOfDay()`
+  - `noon()`
+
 ## 2.1.0
 
 - Add `Pubspec.getVersionMajorMinorPatch()`
