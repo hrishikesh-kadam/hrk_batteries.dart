@@ -44,23 +44,21 @@ void main() {
       expect(DateTime(1999, 11).daysInMonth(), 30);
       expect(DateTime(1999, 12).daysInMonth(), 31);
       expect(DateTime(1996, 2).daysInMonth(), 29);
+      expect(DateTime(1600, 2).daysInMonth(), 29);
+      expect(DateTime(1700, 2).daysInMonth(), 28);
+      expect(DateTime(1800, 2).daysInMonth(), 28);
+      expect(DateTime(1900, 2).daysInMonth(), 28);
       expect(DateTime(2000, 2).daysInMonth(), 29);
-      expect(DateTime(2004, 2).daysInMonth(), 29);
-      expect(DateTime(2100, 2).daysInMonth(), 28);
-      expect(DateTime(2200, 2).daysInMonth(), 28);
-      expect(DateTime(2300, 2).daysInMonth(), 28);
-      expect(DateTime(2400, 2).daysInMonth(), 29);
     });
 
     test('isLeapYear()', () {
-      expect(DateTime(1999).isLeapYear(), false);
+      expect(DateTime(1600).isLeapYear(), true);
+      expect(DateTime(1700).isLeapYear(), false);
+      expect(DateTime(1800).isLeapYear(), false);
+      expect(DateTime(1900).isLeapYear(), false);
       expect(DateTime(1996).isLeapYear(), true);
+      expect(DateTime(1999).isLeapYear(), false);
       expect(DateTime(2000).isLeapYear(), true);
-      expect(DateTime(2004).isLeapYear(), true);
-      expect(DateTime(2100).isLeapYear(), false);
-      expect(DateTime(2200).isLeapYear(), false);
-      expect(DateTime(2300).isLeapYear(), false);
-      expect(DateTime(2400).isLeapYear(), true);
     });
 
     test('startOfMonth()', () {
@@ -132,28 +130,24 @@ void main() {
         DateTime(1996, 2, 29, 23, 59, 59, 999, 999),
       );
       expect(
+        DateTime(1600, 2).endOfMonth(),
+        DateTime(1600, 2, 29, 23, 59, 59, 999, 999),
+      );
+      expect(
+        DateTime(1700, 2).endOfMonth(),
+        DateTime(1700, 2, 28, 23, 59, 59, 999, 999),
+      );
+      expect(
+        DateTime(1800, 2).endOfMonth(),
+        DateTime(1800, 2, 28, 23, 59, 59, 999, 999),
+      );
+      expect(
+        DateTime(1900, 2).endOfMonth(),
+        DateTime(1900, 2, 28, 23, 59, 59, 999, 999),
+      );
+      expect(
         DateTime(2000, 2).endOfMonth(),
         DateTime(2000, 2, 29, 23, 59, 59, 999, 999),
-      );
-      expect(
-        DateTime(2004, 2).endOfMonth(),
-        DateTime(2004, 2, 29, 23, 59, 59, 999, 999),
-      );
-      expect(
-        DateTime(2100, 2).endOfMonth(),
-        DateTime(2100, 2, 28, 23, 59, 59, 999, 999),
-      );
-      expect(
-        DateTime(2200, 2).endOfMonth(),
-        DateTime(2200, 2, 28, 23, 59, 59, 999, 999),
-      );
-      expect(
-        DateTime(2300, 2).endOfMonth(),
-        DateTime(2300, 2, 28, 23, 59, 59, 999, 999),
-      );
-      expect(
-        DateTime(2400, 2).endOfMonth(),
-        DateTime(2400, 2, 29, 23, 59, 59, 999, 999),
       );
     });
 
