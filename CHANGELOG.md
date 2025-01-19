@@ -1,3 +1,7 @@
+## 2.3.0
+
+- Bump hrk_analysis to ^2.0.0
+
 ## 2.2.0
 
 - Add following helper methods to `HrkDateTime`

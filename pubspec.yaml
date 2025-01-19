@@ -1,5 +1,5 @@
 name: hrk_batteries
-version: 2.2.0
+version: 2.3.0
 
 description: >-
   A library to accumulate required dart helper and utility codes
@@ -20,7 +20,7 @@ dependencies:
   
 dev_dependencies:
   test: ^1.21.0
-  hrk_analysis: ^1.0.0
+  hrk_analysis: ^2.0.0
   build_runner: ^2.4.6
   json_serializable: ^6.7.1
   freezed: ^2.4.2
