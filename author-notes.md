@@ -2,4 +2,4 @@
 
 ## TODOs
 
-- 
+- Rename `HrkDateTime.toDate()` to `HrkDateTime.toDateOnly()`
